@@ -8,18 +8,19 @@ import android.widget.ArrayAdapter
 import com.soojung.a20191214_01_listviewpractice02.R
 import com.soojung.a20191214_01_listviewpractice02.datas.GameData
 
-class GameAdapter(context: Context, Int, ArrayList) : ArrayAdapter<GameData>(context,resId,list) {
+class GameAdapter(context:Context, resId:Int, list:ArrayList<GameData>)
+    : ArrayAdapter<GameData>(context, resId, list) {
 
     val  mContext = context
     val  mList = list
     val inf = LayoutInflater.from(mContext)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        var tmepRow = convertView
+        var tempRow = convertView
         if (tempRow == null) {
             tempRow = inf.inflate(R.layout.game_list_item, null)
         }
-        val row = tempRow!
+        val row = tempRow!!
 
         return row
 
