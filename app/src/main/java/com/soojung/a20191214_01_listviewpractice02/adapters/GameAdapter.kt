@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import com.soojung.a20191214_01_listviewpractice02.R
 import com.soojung.a20191214_01_listviewpractice02.datas.GameData
 
-class GameAdapter(context: Context, resId:Int, list: ArrayList) : ArrayAdapter<GameData>(context,resId,list) {
+class GameAdapter(context: Context, Int, ArrayList) : ArrayAdapter<GameData>(context,resId,list) {
 
     val  mContext = context
     val  mList = list
